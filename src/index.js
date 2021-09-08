@@ -45,12 +45,13 @@ function init() {
 
   const loader = new GLTFLoader();
 
+  // File size exceeded the configured limit of 20 MB.
   loader.load(
     // "https://cdn.jsdelivr.net/gh/digitalcoleman/3DModels@main/myBridge1.glb",
     // "http://localhost:1234/myBridge1.glb",
     // "https://github.com/ilovejs/bridge3d/blob/master/src/myBridge2.glb?raw=true",
     // "https://cdn.jsdelivr.net/gh/ilovejs/bridge3d@1/src/myBridge2.glb",
-    "https://cdn.jsdelivr.net/gh/ilovejs/bridge3d@1.1/src/totem.glb",
+    "https://cdn.jsdelivr.net/gh/ilovejs/bridge3d@v1.2/src/face.glb",
     function (gltf) {
       scene.add(gltf.scene);
       render(); //render the scene for the first time
